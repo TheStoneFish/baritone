@@ -71,8 +71,6 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
     public LookBehavior(Baritone baritone) {
         super(baritone);
         this.processor = new AimProcessor(baritone.getPlayerContext());
-        this.smoothYawBuffer = new ArrayDeque<>();
-        this.smoothPitchBuffer = new ArrayDeque<>();
     }
 
     @Override
