@@ -30,7 +30,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.phys.AABB;
-import baritone.api.utils.Helper.java;
+import baritone.api.utils.Helper;
 
 public abstract class Movement implements IMovement, MovementHelper {
 
