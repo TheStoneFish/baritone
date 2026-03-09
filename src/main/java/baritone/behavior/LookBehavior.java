@@ -239,7 +239,9 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
             //ATT2: at 3:05PM, 9/19/24 = Compile successful, executing... works.
         }
     }
-
+    public boolean isRotationComplete() {
+        if (this.target == null) return true;
+    }
     @Override
     public void onSendPacket(PacketEvent event) {
         if (!(event.getPacket() instanceof ServerboundMovePlayerPacket)) {
