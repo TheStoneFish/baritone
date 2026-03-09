@@ -97,7 +97,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
             return;
         }
 
-        if (Baritone.settings().interpolatedLook.value = false) {
+        if (Baritone.settings().interpolatedLook.value == false) {
             switch (event.getState()) {
                 //PRE: onPlayerUpdate was called before rotation data was sent to the server
                 case PRE: {
