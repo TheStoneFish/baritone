@@ -30,6 +30,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.phys.AABB;
+import baritone.api.utils.Helper.java;
 
 public abstract class Movement implements IMovement, MovementHelper {
 
@@ -125,6 +126,7 @@ public abstract class Movement implements IMovement, MovementHelper {
         currentState = updateState(currentState);
          if (!baritone.getLookBehavior().isRotationComplete()) {
             // 阻止移动
+            Helper.logDirect("测试");
             currentState.getInputStates().put(Input.MOVE_FORWARD, false);
             return currentState.getStatus();
         }
