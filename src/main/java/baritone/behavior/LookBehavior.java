@@ -244,7 +244,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
         if (Baritone.settings().interpolatedLook.value) {
             return this.target == null;
         }
-        return true
+        return true;
     }
     @Override
     public void onSendPacket(PacketEvent event) {
