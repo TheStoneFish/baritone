@@ -47,4 +47,5 @@ public interface ILookBehavior extends IBehavior {
      * @see IAimProcessor#fork
      */
     IAimProcessor getAimProcessor();
+    boolean isRotationComplete();
 }
