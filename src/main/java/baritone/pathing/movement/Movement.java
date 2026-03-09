@@ -126,7 +126,7 @@ public abstract class Movement implements IMovement, MovementHelper {
         currentState = updateState(currentState);
          if (!baritone.getLookBehavior().isRotationComplete()) {
             // 阻止移动
-            Helper.logDirect("测试");
+            Helper.HELPER.logDirect("测试");
             currentState.getInputStates().put(Input.MOVE_FORWARD, false);
             return currentState.getStatus();
         }
