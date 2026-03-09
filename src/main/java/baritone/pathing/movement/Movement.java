@@ -123,7 +123,7 @@ public abstract class Movement implements IMovement, MovementHelper {
     public MovementStatus update() {
         ctx.player().getAbilities().flying = false;
         currentState = updateState(currentState);
-         if (baritone.getLookBehavior().stage != 0) {
+         if (!baritone.getLookBehavior().isRotationComplete()) {
             // 阻止移动
             currentState.getInputStates().put(Input.MOVE_FORWARD, false);
             return currentState.getStatus();
