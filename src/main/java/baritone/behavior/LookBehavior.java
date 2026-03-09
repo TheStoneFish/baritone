@@ -242,7 +242,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
     @Override
     public boolean isRotationComplete() {
         if (Baritone.settings().interpolatedLook.value) {
-            return this.target == null
+            return this.target == null;
         }
         return true
     }
