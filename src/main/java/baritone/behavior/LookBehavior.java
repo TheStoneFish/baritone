@@ -239,6 +239,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
             //ATT2: at 3:05PM, 9/19/24 = Compile successful, executing... works.
         }
     }
+    @Override
     public boolean isRotationComplete() {
         return this.target == null || stage == 0;
     }
