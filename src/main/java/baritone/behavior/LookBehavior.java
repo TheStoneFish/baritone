@@ -240,7 +240,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
         }
     }
     public boolean isRotationComplete() {
-        if (this.target == null) return true;
+        return this.target == null || stage == 0;
     }
     @Override
     public void onSendPacket(PacketEvent event) {
